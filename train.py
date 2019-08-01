@@ -1,5 +1,6 @@
 #! /usr/bin/env python
-
+import tensorflow as tf
+import tensorflow.keras as keras
 import argparse
 import os
 import numpy as np
@@ -12,8 +13,6 @@ from keras.callbacks import EarlyStopping, ReduceLROnPlateau
 from keras.optimizers import Adam
 from yolo.callbacks import *
 from utils.multi_gpu_model import multi_gpu_model
-import tensorflow as tf
-import keras
 from keras.models import load_model
 
 def create_training_instances(

@@ -1,3 +1,5 @@
+import tensorflow as tf
+import tensorflow.keras as keras
 from keras.layers import Lambda, concatenate
 from keras.models import Model
 import tensorflow as tf

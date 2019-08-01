@@ -1,5 +1,6 @@
-from keras.callbacks import *
 import tensorflow as tf
+import tensorflow.keras as keras
+from keras.callbacks import *
 import numpy as np
 
 class CustomTensorBoard(TensorBoard):
